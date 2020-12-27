@@ -1,0 +1,66 @@
+:root {
+	--font-size: 1.5rem;
+	--nav-a-padding: 1.25rem 1rem 1rem 2rem;
+	--nav-a-border: solid none none none;
+	--nav-a-fontsize: 20px;
+	--border-1px: 1px;
+	--main-padding: 0 0 0 5rem;
+	--mq-padding: 0 3rem 3rem 3rem;
+}
+
+#navbar {
+	box-sizing: border-box;
+	list-style-type: none;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 330px;
+	border: 2px solid black;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#navbar > header > h1 {
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+	font-size: var(--font-size);
+}
+
+nav > a {
+	text-decoration: none;
+	border-style: var(--nav-a-border);
+	border-width: var(--border-1px);
+	padding: var(--nav-a-padding);
+	font-size: var(--nav-a-fontsize);
+}
+
+#main-doc {
+	margin-left: 300px;
+	padding: var(--main-padding);
+	box-sizing: border-box;
+}
+
+code {
+	background-color: lightgray;
+}
+
+@media (max-width: 800px) {
+	#navbar {
+		width: 100%;
+		height: 330px;
+		position: static;
+	}
+	#main-doc {
+		margin: initial;
+		padding: var(--mq-padding);
+	}
+}

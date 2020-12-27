@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Tribute Page How To</title>
+	</head>
+	<body>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<nav id="navbar">
+			<header>
+				<h1>Tribute Page How To</h1>
+			</header>
+			<a class="nav-link" href="#Introduction">Introduction</a>
+			<a class="nav-link" href="#CodePen_vs_Locally">CodePen vs Locally</a>
+			<a class="nav-link" href="#User_Story_#1">User Story #1</a>
+			<a class="nav-link" href="#User_Story_#2">User Story #2</a>
+			<a class="nav-link" href="#User_Story_#3">User Story #3</a>
+			<a class="nav-link" href="#User_Story_#4">User Story #4</a>
+			<a class="nav-link" href="#User_Story_#5">User Story #5</a>
+			<a class="nav-link" href="#User_Story_#6">User Story #6</a>
+			<a class="nav-link" href="#User_Story_#7">User Story #7</a>
+			<a class="nav-link" href="#User_Story_#8">User Story #8</a>
+			<a class="nav-link" href="#User_Story_#9">User Story #9</a>
+			<a class="nav-link" href="#Closing_Remarks">Closing Remarks</a>
+		</nav>
+		<main id="main-doc">
+			<section id="Introduction" class="main-section">
+				<header>
+					<h2>Introduction</h2>
+				</header>
+				<p>Welcome. This is a guide on how to complete the tribute page responsive web design project from FreeCodeCamp. Before we can get started, here is a list of things we need:</p>
+				<ul>
+					<li>A text editor to save your code. This is not needed if you are working in CodePen.</li>
+					<li>A web browser</li>
+					<Li>Basic knowledge of HTML</li>
+					<li>Basic knowledge of CSS</li>
+				</ul>
+						</section>
+			<section id="CodePen_vs_Locally" class="main-section">
+				<header>
+					<h2>CodePen vs Locally</h2>
+				</header>
+				<p>
+				You can do this project directly on CodePen by forking the pen provided by FreeCodeCamp and save everything there. 
+				If you want to work locally and have your code uploaded to an environment like Github then you need to write your code in a text editor and save the code as an HTML file. 
+				You then use your web browser to see the result. If you are working locally, you will need to add the following elements:
+				</p>
+				<ul>
+					<li><code><<span></span>!DOCTYPE html></code> is not an element but a declaration at the start of every html document. You can inspect a webpage to see for yourself.</li>
+					<li><code><<span></span>html></code> between the opening and closing tag sits the rest of our html code.</li>
+					<li><code><<span></span>head></code> for the next two elements.</li>
+					<li><code><<span></span>meta></code> for metadata. We will use it to have our page be responsive by adding in the following code<br>
+						<code><<span></span>meta name="viewport" content="width=device-width, initial-scale=1.0"></code></li>
+					<li><code><<span></span>style></code> for CSS code if you choose to do it in the same file as your html. 
+						If not, then you do not include this element. Instead you include a <code><<span></span>link></code> element to link to your external CSS file.</li>
+					<li><code><<span></span>body></code> is where the text and images go, the things we see when we view a webpage.</li>
+					<li><code><<span></span>script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"><<span></span>script></code> in the body element to test your page.</li>
+				</ul>
+			</section>
+			<section id="User_Story_#1" class="main-section">
+				<header>
+					<h2>User Story #1</h2>
+				</header>
+				<p>We need to have an element that holds all other elements. We need to give that element an id attribute with the value "main".
+				We can use the code<<span></span>main> element and give it the attribute code<<span></span>id="main">. 
+				So what we have is opening tag with attribute <code><<span></span>main id="main"></code> and closing tag <code><<span></span>/main></code> that all our other elements will be contained in.</p>
+			</section>
+			<section id="User_Story_#2" class="main-section">
+				<header>
+					<h2>User Story #2</h2>
+				</header>
+					<p>
+					We want an element with an id attribute with the value "title" whose content will tell readers immediately at a glance who or what is the tribute page dedicated to. 
+					We can use a header element such as <code><<span></span>h1></code>.
+					It will look something like this <code><<span></span>h1 id="title"><i>Your title</i><<span></span>/h1></code>
+					</p>
+			</section>
+			<section id="User_Story_#3" class="main-section">
+				<header>
+					<h2>User Story #3</h2>
+				</header>
+				<p>We will use the <code><<span></span>figure></code> and give it the id attribute "img-div".<br>
+				<code><<span></span>figure id="img-div"></code><br>
+				<code><<span></span>/figure></code>
+				</p>
+			</section>
+			<section id="User_Story_#4" class="main-section">
+				<header>
+					<h2>User Story #4</h2>
+				</header>
+				<p>Now it is time to actually add the image. We will have an <code><<span></span>img></code> 
+				element within the <code><<span></span>figure></code> element and we need to give it an id attribute 
+				with the value "image". Find an image that relates to your topic. I recommend using an image that is Creative Commons licensed.<br>
+				<code><<span></span>img id="image" src="<i>your image link</i>" alt="<i>your alt text</i>"></code>
+			</section>
+			<section id="User_Story_#5" class="main-section">
+				<header>
+					<h2>User Story #5</h2>
+				</header>
+					<p>
+					Next, we have to give our image a caption. We can use the <code><<span></span>figcaption></code> element to add a caption and give the element an id attribute with the value "img-caption". It will be within our <code><<span></span>figure></code> element together with our <code><<span></span>img></code> element. <code><<span></span>figcaption id="img-caption"><i>Your image caption</i><<span></span>/figcaption></code>
+				</header>
+			</section>
+			<section id="User_Story_#6" class="main-section">
+				<header>
+					<h2>User Story #6</h2>
+				</header>
+				<p>
+				We need an element whose content will include facts on our tribute page topic and we need to give it an attribute id with the value "tribute-info". We can create a 
+				<code><<span></span>div></code> element that will hold other elements like <code><<span></span>p></code> or <code><<span></span>ul></code> elements that will subsequently have the factoids as content.
+				</p>
+			</section>
+			<section id="User_Story_#7" class="main-section">
+				<header>
+					<h2>User Story #7</h2>
+				</header>
+				<p>
+				Next, we need to provide a link to an external website that gives more information on the topic of our tribute page. We will use an <code><<span></span>a></code> with an id attribute whose value is "tribute-link". If we want the link to open in a new tab we give the element the <code><<span></span>target></code> attribute with the value <code>_blank</code>.<br>
+				<code><<span></span>a id="tribute-link" href="<i>external site link</i>" target="_blank"><i>Your hyperlink text</i><<span></span>/a></code>
+				</p>
+			</section>
+			<section id="User_Story_#8" class="main-section">
+				<header>
+					<h2>User Story #8</h2>
+				</header>
+				<p>We want our image to be responsive. It should resize according to the width of its parent element and its width should not exceed its original size. 
+				Here we get to use CSS to style our <code><<span></span>img></code>. We can select our element by its id attribute. We use the pound/hash symbol # and the id attribute value. 
+				<code>#image { <i>your css goes here</i> }</code> Your CSS goes between brackets. Style away.</p>
+				<p><code><<span></span>img></code> elements are by default inline-block elements. We want it to be <code>display: block;</code>. 
+				Next, we give it <code>height: auto;</code> and <code>max-width: 100%;</code> to allow the image to become smaller or larger depending on the viewport but never exceeding its original size.
+				</p>
+			</section>
+			<section id="User_Story_#9" class="main-section">
+				<header>
+					<h2>User Story #9</h2>
+				</header>
+				<p>
+				The last test is for the image to be centered within its container. We will style our image with <code>margin: auto;</code> which can automatically center block elements horizontally.
+				</p>
+			</section>
+			<section id="Closing_Remarks" class="main-section">
+				<header>
+					<h2>Closing Remarks</h2>
+				</header>
+				<p>We've passed the tests for the user stories but our webpage is far from complete. Our page still looks pretty barebones. 
+				Give it your own personal touch and style it to your heart's content. Here are some resources to help you:
+				</p>
+				<ul>
+					<li><a href="https://www.freecodecamp.org/learn" target="_blank">FreeCodeCamp</a></li>
+					<li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>
